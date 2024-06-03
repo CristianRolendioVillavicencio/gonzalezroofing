@@ -1,0 +1,181 @@
+/* Contact 1 ---------------------------------- */ 
+.th-contact-form {
+    padding: 50px;
+    .form-group {
+        --bs-gutter-x: 20px;
+    }
+}
+
+.contact-feature {
+    padding: 40px 30px 35px;
+    background: $smoke-color;
+    text-align: center;
+    .icon-btn {
+        --btn-size: 100px;
+        background-color: $white-color;
+        color: $theme-color;
+        margin-bottom: 30px;
+        font-size: 30px;
+        border-radius: 50%;
+        border: none;
+    }
+    &_label {
+        margin-bottom: 5px;
+        font-size: 20px;
+        font-weight: 700;
+        font-family: $title-font;
+        color: $title-color;
+        margin-top: -0.5em;
+    }
+    &_link {
+        font-size: 16px;
+        font-weight: 500;
+        color: $body-color;
+        font-family: $body-font;
+        display: block;
+        line-height: 26px;
+        &:hover {
+            color: $theme-color;
+        }
+    }
+}
+
+@include xl {
+    .contact-feature {
+        padding: 20px;
+    }
+}
+
+@include sm {
+    .contact-feature {
+        &-wrap {
+            gap: 15px;
+        }
+        gap: 15px;
+        padding: 15px;
+    }
+}
+
+@include xs {
+    .contact-feature {
+        &-wrap {
+            grid-template-columns: auto;
+        }
+        padding: 22px;
+    }
+    .th-contact-form {
+        padding: 30px;
+    }
+}
+
+/* Quote Form faq page ----------------------- */
+.quote-form {
+    background: $white-color;
+    box-shadow: 0px 10px 30px rgba(8, 14, 28, 0.06);
+    border-radius: 5px;
+    padding: 50px;
+    @include xs {
+        padding: 40px 20px;
+    }
+    select,
+    .form-control,
+    .form-select,
+    textarea,
+    input {
+        background-color: $smoke-color2;
+    }
+    .form-group {
+        > i {
+            background-color: $smoke-color2;
+            width: 18px;
+            text-align: right;
+        }
+    }
+}
+
+/* Contact Page ---------------------------------- */ 
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    box-shadow: 0px 4px 30px rgba(8, 14, 28, 0.08);
+    border-radius: 5px;
+    background-color: $white-color;
+    padding: 40px;
+    .box-title {
+        margin-bottom: 10px;
+    }
+    &_icon {
+        display: inline-block;
+        width: 80px;
+        min-width: 80px;
+        height: 80px;
+        line-height: 80px;
+        background-color: $theme-color;
+        color: $white-color;
+        text-align: center;
+        font-size: 40px;
+        position: relative;
+        box-shadow: 0px 6px 20px rgba($color: #684DF4, $alpha: 0.6);
+        border-radius: 5px;
+    }
+    &_text {
+        min-width: 180px;
+        display: block;
+        margin-bottom: -0.5em;
+        font-family: $body-font;
+        span,
+        a {
+            display: block;
+            max-width: fit-content;
+        }
+        a {
+            color: $body-color;
+            &:hover {
+                color: $theme-color;
+            }
+        }
+    }
+}
+
+.contact-form {
+    select,
+    .form-control,
+    .form-select,
+    textarea,
+    input {
+        background-color: $white-color;
+    }
+    .form-group {
+        > i {
+            background-color: $white-color;
+            color: $theme-color;
+            width: 18px;
+            text-align: right;
+        }
+    }
+}
+
+.map-sec {
+    line-height: 0px;
+    iframe {
+        height: 550px;
+        @include xl {
+            height: 450px;
+        }
+        @include xs {
+            height: 300px;
+        }
+    }
+}
+
+@include xs {
+    .contact-info {
+        padding: 30px;
+    }
+}
+@include vxs {
+    .contact-info {
+        flex-direction: column;
+    }
+}

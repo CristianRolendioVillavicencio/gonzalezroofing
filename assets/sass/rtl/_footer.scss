@@ -1,0 +1,38 @@
+.footer-widget.widget_meta a, .footer-widget.widget_pages a, .footer-widget.widget_archive a, .footer-widget.widget_categories a, .footer-widget.widget_nav_menu a {
+    padding: 0 20px 0 0px;
+    &:before {
+        left: auto;
+        right: 0;
+        content: "\f323";
+    }
+}
+.footer-links li {
+    padding-left: 15px;
+    padding-right: 0;
+    margin-left: 10px;
+    margin-right: 0;
+    &:after {
+        right: auto;
+        left: 0;
+    }
+}
+.recent-post .media-img {
+    margin-left: 20px;
+    margin-right: 0;
+}
+.recent-post .recent-post-meta a i {
+    margin-left: 6px;
+    margin-right: 0;
+}
+.newsletter-widget .th-btn {
+    i {
+        transform: none;
+    }
+}
+.info-box_icon {
+    margin-left: 10px;
+    margin-right: 0;
+    i {
+        transform: rotateY(180deg);
+    }
+}

@@ -1,0 +1,107 @@
+.img-box2 {
+    margin-left: 56px;
+    margin-right: 0;
+    .img3,
+    .img2 {
+        left: 0;
+        right: auto;
+    }  
+    .shape1 {
+        right: 0 !important;
+        left: auto !important;
+    }  
+}
+.wcu-thumb-2 {
+    margin-right: -120px;
+    margin-left: 0;
+    transform: rotateY(180deg);
+}
+.skill-feature .progress-value {
+    left: 0;
+    right: auto;
+}
+.about-info-wrap .icon {
+    i {
+        transform: rotateY(180deg);
+    }
+}
+.project-card.style2 .project-content {
+    text-align: right;
+    left: auto;
+    right: 0;
+    .project-title {
+        padding: 20px 20px 20px 40px;
+    }
+}
+.testi-card.style2 .testi-box_review {
+    right: 40px;
+    left: auto;
+    transform: rotateY(180deg);
+}
+.testi-card.style2:after {
+    transform: none;
+    right: 80px;
+}
+.apppointment-area-1 .appointment-form-wrap {
+    margin-left: 0;
+}
+@include ml {
+    .img-box2 .img1 {
+        margin-left: 240px;
+        margin-right: 0;
+    }
+}
+@include lg {
+    .img-box2 {
+        margin-left: 20px;
+    }
+    .apppointment-area-1 .appointment-form-wrap {
+        margin-left: auto;
+        margin-right: 0;
+    }
+}
+@include md {
+    .img-box2 {
+        margin-left: 0;
+    }
+}
+@include sm {
+    .hero-2 .banner-img {
+        background-position: right;
+    }
+    .img-box2 {
+        padding-left: 225px;
+        padding-right: 0;
+        padding-bottom: 250px;
+        .img1 {
+            margin-left: 0;
+        }
+    }
+}
+@include xs {
+    .testi-card.style2 .testi-box_review {
+        left: 40px;
+        right: auto;
+        transform: none;
+    }
+    .testi-card.style2:after {
+        left: 80px;
+        right: auto;
+    }
+    .testi-card.style2 .media {
+        text-align: right;
+    }
+    .img-box2 {
+        padding: 0;
+        .img3 {
+            margin-right: 13px;
+            margin-left: 0;
+        }
+    }
+    .apppointment-area-1 .appointment-form-wrap .th-btn {
+        padding: 17.5px 14px;
+    }
+    .apppointment-area-1 .appointment-form-wrap {
+        margin: 40px 0 0px;
+    }
+}

@@ -1,0 +1,106 @@
+.header-layout6 .menu-area .logo-bg {
+    right: 0px;
+    left: auto;
+    transform: rotateY(180deg);
+}
+.header-layout6 .sticky-wrapper:after {
+    left: 0;
+    right: auto;
+}
+.header-layout6 .main-menu {
+    margin-right: 100px;
+    margin-left: 0;
+    @include xl {
+        margin-right: 70px;
+    }
+}
+.header-layout6 .menu-area {
+    padding-right: 60px;
+    padding-left: 0;
+    @include md {
+        margin-right: -35px;
+        margin-left: 0;
+        padding-right: 50px;
+    }
+    @include xs {
+        margin-right: -12px;
+        padding-right: 35px;
+    }
+}
+/***hero area***/
+.hero-6 .hero-slider-indicator {
+    left: 150px;
+    right: auto;
+    @media (max-width: 1600px) {
+        left: 80px;
+    }
+    @include ml {
+        left: 50px;
+    }
+}
+/****about area****/
+.img-box6 {
+    margin-left: 140px;
+    margin-right: 0;
+    text-align: left;
+}
+.client-grid-wrap {
+    @include md {
+        text-align: right;
+    }
+}
+.service-card.style3 .service-bg-num {
+    left: 25px;
+    right: auto;
+}
+.project-slider6 .slick-arrow {
+    left: var(--pos-x, -15px);
+}
+.appointment-thumb:after, .appointment-thumb:before {
+    right: -53px;
+    left: auto;
+}
+.appointment-thumb:after {
+    right: calc(-53px - 40px);
+}
+.appointment-thumb {
+    @include md {
+        &:before {
+            right: 0;
+        }
+        &:after {
+            right: calc(-55px + 20px);
+        }
+    }
+}
+.testi-block.style3 .quote-icon {
+    left: auto;
+}
+.testi-slider5 .slick-dots {
+    text-align: right;
+    margin-right: 10px;
+    margin-left: 0;
+}
+.slick-dots li {
+    margin-right: 15px;
+    margin-left: 0;
+}
+.slick-dots li:first-child {
+    margin-right: 0;
+}
+.testi-thumb5 {
+    margin-left: -130px;
+    margin-right: -250px;
+    @include xxl {
+        margin-left: -50px;
+        margin-right: -300px;
+    }
+    @include ml {
+        margin-right: -350px;
+        margin-left: -30px;
+    }
+    @include xl {
+        margin-right: -260px;
+        margin-left: 0;
+    }
+}

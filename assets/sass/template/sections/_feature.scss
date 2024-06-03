@@ -1,0 +1,65 @@
+/* Feature Card ---------------------------------- */ 
+.feature-card {
+    text-align: center;
+    border: 2px solid #D9E0F3;
+    border-radius: 10px;
+    padding: 40px 12px;
+    .shape-icon {
+        width: 120px;
+        height: 115px;
+        line-height: 115px;
+        margin: 0 auto 30px auto;
+        filter: drop-shadow(0px 10px 30px rgba(8, 14, 28, 0.06));
+        &:before {
+            background-color: $white-color;
+            clip-path: path("M6.35418 25.7699C-3.10248 43.0115 -1.601 65.2669 8.18807 82.317C21.8699 106.149 51.9755 119.386 78.1565 111.915C104.338 104.443 123.425 76.1006 119.484 48.8163C112.307 -0.867846 31.1988 -19.5262 6.35418 25.7699Z");
+        }
+    }
+    &_text {
+        max-width: 315px;
+        margin: 0 auto -0.5em auto;
+    }
+    &.style2 {
+        border-radius: 0;
+        border: 0;
+        padding: 50px 40px;
+        display: flex;
+        align-items: center;
+        text-align: left;
+        gap: 30px;
+        .box-title {
+            transition: 0.4s;
+        }
+        &:before {
+            background: $smoke-color;
+            opacity: 1;
+            z-index: -1;
+            transition: 0.4s;
+        }
+        &:hover {
+            &:before {
+                background: $black-color;
+                opacity: 0.8;
+            } 
+            .box-title {
+                color: $white-color;
+            } 
+        }
+    }
+}
+@media (max-width: 1200px) {
+    .feature-card.style2 {
+        .box-title {
+            font-size: 20px;
+        }
+    }
+}
+@include lg {
+    .feature-card.style2 {
+        padding: 30px 25px;
+        gap: 20px;
+        .box-title {
+            font-size: 18px;
+        }
+    }
+}

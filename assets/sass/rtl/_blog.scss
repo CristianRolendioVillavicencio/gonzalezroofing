@@ -1,0 +1,58 @@
+.blog-meta span, .blog-meta a {
+    margin-right: 0;
+    margin-left: 16px;
+    i {
+        margin-left: 10px;
+        margin-right: 0;
+    }
+    &:after {
+        margin-right: 20px;
+        margin-left: 0;
+    }
+}
+.blog-card .box-title a {
+    background-position: bottom right;
+}
+.blog-card .blog-content .blog-bg-shape {
+    left: 0;
+    right: auto;
+}
+.blog-meta span:last-child, .blog-meta a:last-child {
+    margin-left: 0;
+    padding-left: 0;
+
+}
+.blog-grid-card .box-title a {
+    background-position: bottom right;
+}
+.blog-grid-card .blog-content {
+    padding: 24px 0px 20px 30px;
+}
+.blog-card.style3 .blog-title a {
+    background-position: bottom right;
+}
+@include xs {
+    .blog-grid-card .blog-content {
+        padding: 24px 30px 20px;
+    }
+}
+@include vxs {
+    .blog-meta span,
+    .blog-meta a {
+        padding-left: 10px;
+        padding-right: 0;
+        margin-left: 0;
+    }
+    .blog-meta span:last-child, 
+    .blog-meta a:last-child {
+        padding-left: 0;
+    }
+    .blog-meta span:after,
+    .blog-meta a:after {
+        margin-right: 12px;
+        margin-left: 0;
+    }
+    .blog-grid-card .blog-content {
+        padding: 24px 20px 20px;
+    }
+}

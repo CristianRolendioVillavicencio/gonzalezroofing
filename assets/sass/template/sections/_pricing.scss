@@ -1,0 +1,110 @@
+/* Pricing 1 ---------------------------------- */ 
+.checklist{
+    li {
+        &.unavailable {
+            opacity: 0.5;
+            > i {
+            }
+        }
+    }
+}
+.price-card {
+    background-color: $smoke-color;
+    border-top: 2px solid $theme-color;
+    padding: 0 50px 50px;
+    position: relative;
+    z-index: 2;
+    margin-top: 40px;
+    transition: 0.4s;
+    .bg-shape-img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        opacity: 0.05;
+        z-index: -1;
+        img {
+            width: 100%;
+        }
+    }
+    .service-default-icon {
+        padding: 0 25px 20px;
+        &:after {
+            border-bottom: solid 40px $theme-color;
+            border-left: solid 70px transparent;
+            border-right: solid 70px transparent;
+        }
+    }
+    &_top {
+        padding: 30px 0;
+        margin-bottom: 30px;
+        border-bottom: 1px solid $border-color;
+    }
+    &_title {
+        font-size: 22px;
+        font-weight: 500;
+        font-family: $body-font;
+        margin-top: -0.2em;
+        margin-bottom: 22px;
+        transition: 0.4s ease-in-out;
+    }
+    &_text {
+        margin-bottom: -0.4em;
+        margin-top: 11px;
+        transition: 0.4s ease-in-out;
+    }
+    &_price {
+        font-size: 45px;
+        font-weight: 700;
+        font-family: $body-font;
+        line-height: 1;
+        margin: -0.09em 0;
+        position: relative;
+        width: fit-content;
+        transition: 0.4s ease-in-out;
+        .duration {
+            font-size: 16px;
+            font-weight: 500;
+            margin-bottom: 0;
+            position: relative;
+            top: -1px;
+            left: -10px;
+        }
+    }
+    .checklist {
+        margin: -5px 0 30px 0;
+    }
+    &.active,
+    &:hover { 
+        background: $title-color;       
+        .bg-shape-img {
+            img {
+                filter: brightness(999);
+            }
+        }
+        .price-card_top {
+            border-color: $body-color;
+        }
+        .checklist.style2 li,
+        .price-card_price,
+        .price-card_title {
+            color: $white-color;
+        }
+        .price-card_text {
+            color: #e6e6e6;
+        }
+    }
+}
+@include md {
+    .price-card {
+        padding: 0 40px 40px;
+    }
+}
+@include vxs {
+    .price-card {
+        padding: 0 30px 30px;
+        &_text {
+            font-size: 14px;
+        }
+    }
+}

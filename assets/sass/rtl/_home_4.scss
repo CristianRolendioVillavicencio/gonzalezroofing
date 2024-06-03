@@ -1,0 +1,91 @@
+.th-hero-wrapper .slick-dots {
+    right: 80px;
+    left: auto;
+    transform: translateY(-50%);
+}
+.hero-4 .th-hero-bg {
+    background-position: right;
+}
+.about-feature3 ~ .about-feature3 {
+    border-right: 1px solid #CDCDCD;
+    border-left: 0;
+    padding-right: 50px;
+    padding-left: 0;
+    margin-right: 12px;
+    margin-left: 0;
+}
+.skill-feature.style3 .progress .progress-bar:after {
+    right: auto;
+    left: 0;
+}
+.wcu-card-slider {
+    margin-left: -100px;
+    margin-right: 0;
+}
+.testi-block_profile:after {
+    left: auto;
+    right: -40px;
+    border-radius: 50px 0px 0 50px;
+    border-right: 2px solid $theme-color;
+    border-left: 0;
+}
+.testi-block .review-rating {
+    transform: rotateY(180deg);
+}
+.testi-block .quote-icon {
+    left: 40px;
+    right: auto;
+}
+.award-thumb {
+    margin-left: 50px;
+    margin-right: 0;
+    .award {
+        left: 0;
+        right: auto;
+    }
+}
+.cta-thumb3 {
+    right: 0 !important;
+    left: auto !important;
+    transform: rotateY(180deg);
+}
+.about-thumb-4 img {
+    object-position: top left;
+}
+@include ml {
+    .hero-4 .th-hero-bg {
+        background-position: center;
+    }
+}
+@media (max-width: 1200px) {
+    .award-thumb {
+        margin-left: 0;
+    }
+}
+@include lg {
+    .wcu-card-slider {
+        margin-left: 0;
+    }
+    .award-thumb {
+        padding-left: 100px;
+        padding-right: 0;
+    }
+    .about-feature3 ~ .about-feature3 {
+        border: 0;
+        padding-right: 0;
+        margin-right: 28px;
+    }
+}
+@include sm {
+    .hero-4 .th-hero-bg {
+        background-position: right;
+    }
+}
+@include vxs {
+    .about-feature3 ~ .about-feature3 {
+        margin: 30px 0 0;
+    }
+    .testi-block .testi-block_profile:after {
+        right: -30px;
+    }
+}

@@ -1,0 +1,125 @@
+.feature-card.style2 {
+    text-align: right;
+}
+.img-box5 {
+    margin-left: 56px;
+    margin-right: 0;
+    text-align: left;
+    .shape1 {
+        right: -46px !important;
+        left: auto !important;
+    }
+}
+.about-grid-wrap.style2 .details {
+    border-left: 1px solid #CDCDCD;
+    border-right: 0;
+    padding-left: 40px;
+    padding-right: 0;
+}
+.portfolio-slider5 .slick-list {
+    padding-left: 280px;
+    padding-right: 380px;
+}
+.portfolio-slider5 .slick-dots li ~ li {
+    margin: 0 15px 0 0;
+}
+.img-box4 .customer-wrap {
+    left: auto;
+    text-align: start;
+    right: -110px;
+    top: 56px;
+    padding: 32px 35px 31px 30px;
+}
+.img-box4 .customer-wrap .customer-wrap-icon {
+    transform: translate(50%, 0);
+    margin-right: -30px;    
+}
+.img-box4 .customer-wrap .customer-wrap-text {
+    margin-left: 0;
+}
+.why-sec-v5 {
+    .wcu-card-slider {
+        margin-right: -15px;
+        margin-left: -100px;
+    }
+}
+.wcu-card.style4 .wcu-card_title a {
+    background-position: bottom right;
+}
+.testi-block.style2 .quote-icon {
+    right: auto;
+    left: auto;
+}
+@include ml {
+    .portfolio-slider5 .slick-list {
+        padding-right: 12px;
+        padding-left: 414px;
+    }
+    .img-box5 {
+        margin-left: 20px;
+    }
+}
+@media (max-width: 1200px) {
+    .portfolio-slider5 .slick-list {
+        padding-left: 12px;
+        padding-right: 344px;
+    }
+    .img-box5 {
+        margin-left: 0;
+    }
+}
+@include lg {
+    .img-box4 .customer-wrap {
+        right: auto;
+        left: -110px;
+    }
+    .why-sec-v5 .wcu-card-slider {
+        margin-left: 0;
+    }
+    .testi-block.style2 .testi-block_profile {
+        text-align: left;
+    }
+    .portfolio-slider5 .slick-list {
+        padding-right: 12px;
+        padding-left: 260px;
+    }
+}
+@include md {
+    .img-box5 {
+        margin-left: 0;
+    }
+    .portfolio-slider5 {
+        padding-right: 0;
+        padding-left: 24px;
+        .slick-list {
+            padding-right: 12px;
+            padding-left: 0;
+        }
+    }
+    .testi-block.style2 .quote-icon {
+        right: 0;
+    }
+}
+@include sm {
+    .about-grid-wrap.style2 .details {
+        border: 0;
+        padding: 0;
+    }
+    .img-box4 .customer-wrap {
+        padding: 12px 0px 11px 20px;
+        left: -90px;
+        .customer-wrap-icon {
+            margin-right: 0px;
+        }
+    }
+}
+@include vxs {
+    .testi-block.style2 .testi-block_profile {
+        text-align: right;
+    }
+    .testi-block.style2 .quote-icon {
+        left: 0;
+        right: auto;
+        margin: 0;
+    }
+}

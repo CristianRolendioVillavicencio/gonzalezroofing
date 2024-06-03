@@ -1,0 +1,240 @@
+/* Counter 1 ---------------------------------- */
+.counter-area-1 {
+    padding: 60px;
+    transform: translate(0, 50%);
+    margin-top: -93px;
+}
+.counter-area-3 {
+    padding: 80px;
+    transform: translate(0, 50%);
+    margin-top: -125px;
+    position: relative;
+    z-index: 3;
+}
+.counter-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    &_icon {
+        text-align: center;
+        position: relative;
+        padding-left: 0px;
+        margin-bottom: 2px;
+        z-index: 2;
+        img {
+            transition: 0.4s ease-in-out;
+        }
+    }
+    &_number {
+        font-size: 45px;
+        color: $white-color;
+        font-weight: 800;
+        margin-bottom: 8px;
+        margin-top: -0.25em;
+    }
+    &_text {
+        font-weight: 700;
+        font-size: 14px;
+        color: $white-color;
+        display: block;
+        margin-bottom: -0.4em;
+    }
+    &:hover {
+        .counter-card {
+            &_icon {
+                img {
+                    transform: rotateY(180deg);
+                }
+            }
+        }
+    }
+    &-wrap.style2 {
+        &:after {
+            display: none;
+        }
+        ~ .counter-card-wrap {
+            position: relative;
+            &:after {
+                content: '';
+                position: absolute;
+                left: -50px;
+                display: block;
+                top: 50%;
+                width: 1px;
+                height: 60px;
+                border-left: 1px dashed #c6c6c6;
+                transform: translate(0px, -50%);
+            }
+        }
+    }
+    &.style2 {
+        .counter-card_text {
+            color: #363739;
+            font-size: 16px;
+            font-weight: 600;
+        }
+        .counter-card_number {
+            color: $title-color;
+            margin-bottom: 0;
+        }
+    }
+    &-wrap2 {
+        .counter-card_text {
+            font-size: 16px;
+            font-weight: 600;
+            margin-top: 6px;
+        }
+    }
+    &.style3 {
+        margin-top: -0.7em;
+        .counter-card_number {
+            font-size: 55px;
+            font-weight: 700;
+            margin-top: 0;
+        }
+    }
+}
+
+@include xl {
+    .counter-card-wrap ~ .counter-card-wrap.style2:after {
+        display: none;
+    }
+}
+@include lg {
+    .counter-area-3 {
+        padding: 60px;
+        margin-top: -100.5px;
+    }
+    .counter-card.style3 .counter-card_number {
+        font-size: 45px;
+    }
+}
+@include md {
+    .counter-area-3,
+    .counter-area-1 {
+        padding: 60px;
+        transform: none;
+        margin-top: 0;
+        margin-bottom: 80px;
+    }
+    .counter-card.style3 {
+        margin-top: -0.4em;
+    }
+}
+@include sm {
+    .counter-area-1 {
+        padding: 40px;
+    }
+    .counter-card_number {
+        font-size: 35px;
+    }
+}
+@include xs {
+    .counter-area-1 {
+        padding: 40px 20px;
+    }
+    .counter-card {
+        display: block;
+        text-align: center;
+    }
+    .counter-card_icon {
+        margin-bottom: 20px;
+    }
+    .counter-area-3 {
+        text-align: center;
+    }
+    .counter-card.style3 {
+        margin-top: 0;
+        display: inline-flex;
+        .counter-card_icon {
+            margin-bottom: 0px;
+        }
+        .counter-card_number {
+            margin-top: -0.3em;
+            margin-bottom: 0;
+        }
+    }
+    .counter-card-wrap2 .counter-card_text {
+        margin-top: 16px;
+    }
+}
+@include vxs {
+    .counter-card {
+        &_number {
+            font-size: 36px;
+        }
+        &_text {
+            font-size: 14px;
+        }
+    }
+    .counter-area-1 {
+        padding: 40px 10px;
+    }
+}
+/********counter-area-4********/
+.counter-area-4 {
+    padding-top: 210px;
+    @include md {
+        padding-top: 90px;
+    }
+}
+.client-grid-wrap {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    .client-grid-thumb {
+        flex: none;
+    }
+    .client-grid_text {
+        font-size: 18px;
+        font-weight: 800;
+        color: #363739;
+        line-height: 28px;
+        margin-bottom: 0;
+    }
+    @include md {
+        text-align: left;
+        justify-content: center;
+    }
+    @include vxs {
+        display: block;
+        text-align: center;
+        .client-grid-thumb {
+            margin-bottom: 20px;
+        }
+    }
+}
+.counter-card.style4 {
+    display: block;
+    text-align: center;
+    background: $smoke-color;
+    padding: 40px;
+    .counter-card_icon {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        background: rgba(230, 58, 39, 0.1);
+        line-height: 100px;
+        margin: auto auto 30px;
+        transition: 0.4s;
+        img {
+            max-width: 50px;
+        }
+    }
+    .counter-card_number {
+        color: $title-color;
+        margin-bottom: 5px;
+    }
+    .counter-card_text {
+        color: $title-color;
+        text-align: center;
+    }
+    &:hover {
+        .counter-card_icon {
+            background: rgba(230, 58, 39, 1);
+            img {
+                filter: brightness(99);
+            }
+        }
+    }
+}
