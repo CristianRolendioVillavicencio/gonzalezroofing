@@ -2041,7 +2041,8 @@ textarea.is-invalid {
   height: 48em;
   background-image: -webkit-radial-gradient(circle 10px, #FFF 100%, transparent 0), -webkit-radial-gradient(circle 10px, #FFF 100%, transparent 0), -webkit-radial-gradient(circle 10px, #FFF 100%, transparent 0), -webkit-radial-gradient(circle 10px, #FFF 100%, transparent 0), -webkit-radial-gradient(circle 10px, #FFF 100%, transparent 0), -webkit-radial-gradient(circle 10px, #FFF 100%, transparent 0), -webkit-radial-gradient(circle 10px, #FFF 100%, transparent 0), -webkit-radial-gradient(circle 10px, #FFF 100%, transparent 0);
   background-image: radial-gradient(circle 10px, #FFF 100%, transparent 0), radial-gradient(circle 10px, #FFF 100%, transparent 0), radial-gradient(circle 10px, #FFF 100%, transparent 0), radial-gradient(circle 10px, #FFF 100%, transparent 0), radial-gradient(circle 10px, #FFF 100%, transparent 0), radial-gradient(circle 10px, #FFF 100%, transparent 0), radial-gradient(circle 10px, #FFF 100%, transparent 0), radial-gradient(circle 10px, #FFF 100%, transparent 0);
-  background-position: 0em -18em, 0em 18em, 18em 0em, -18em 0em, 13em -13em, -13em -13em, 13em 13em, -13em 13em;
+  background-position: 0em -18em, 0em 18em, 18em 0em, -18em 0em,
+ 13em -13em, -13em -13em, 13em 13em, -13em 13em;
   background-repeat: no-repeat;
   font-size: 0.5px;
   border-radius: 50%;
