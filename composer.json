@@ -1,0 +1,7 @@
+{
+    "name": "cristianrolendiovillavicencio/gonzalezroofing",
+    "description": "Proyecto de ejemplo para gonzalezroofing",
+    "require": {
+        "php": ">=7.3"
+    }
+}
