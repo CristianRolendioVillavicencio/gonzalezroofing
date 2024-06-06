@@ -5876,6 +5876,31 @@ ol.wp-block-rss {
   z-index: -2;
 }
 
+.logo-bg {
+  position: relative;
+  display: inline-block;
+}
+
+.logo-bg:after {
+  content: '';
+  background-color: #A01707;
+  position: absolute;
+  left: 200px;
+  bottom: 80px;
+  height: 90px;
+  width: 50%;
+  -webkit-clip-path: polygon(0 0, calc(100% - 30px) 0, 100% 100%, 0% 100%);
+          clip-path: polygon(0 0, calc(100% - 30px) 0, 100% 100%, 0% 100%);
+  z-index: -1;
+}
+
+
+
+
+
+
+
+
 /* Hight Resoulation devices */
 @media (min-width: 1922px) {
   .header-layout1 .logo-bg {
@@ -11187,7 +11212,7 @@ table.woocommerce-product-attributes {
 }
 
 .select2-container--default .select2-search--dropdown .select2-search__field {
-  border: 1px solid #eee;
+  border: 1px solid #ffffff;
   padding: 0;
 }
 
