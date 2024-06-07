@@ -5881,19 +5881,6 @@ ol.wp-block-rss {
   display: inline-block;
 }
 
-.logo-bg:after {
-  content: '';
-  background-color: #A01707;
-  position: absolute;
-  left: 200px;
-  bottom: 80px;
-  height: 90px;
-  width: 50%;
-  -webkit-clip-path: polygon(0 0, calc(100% - 30px) 0, 100% 100%, 0% 100%);
-          clip-path: polygon(0 0, calc(100% - 30px) 0, 100% 100%, 0% 100%);
-  z-index: -1;
-}
-
 
 
 
