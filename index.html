@@ -513,7 +513,7 @@
                                 <div class="col-auto">
                                     <div class="header-logo">
                                         <a href="index.html">
-                                            <img src="assets/img/logo.svg" alt="Gonzalez Roofing" />
+                                            <img src="assets/img/logo.png" alt="Gonzalez Roofing" />
                                         </a>
                                     </div>
                                 </div>
@@ -1144,7 +1144,6 @@ Service Area
                             </div>
                         </div>
                     </div>
-                    
                 </div>
             </div>
         </section>
@@ -1257,7 +1256,11 @@ Service Area
                                 </p>
                             </div>
                             <div class="thumb">
-                                <img src="assets/img/service/service_box_2-1.webp" alt="img" style="width: 270px; height: 200px; object-fit: cover;" />
+                                <img
+                                    src="assets/img/service/service_box_2-1.webp"
+                                    alt="img"
+                                    style="width: 270px; height: 200px; object-fit: cover"
+                                />
 
                                 <a href="service-details.html" class="icon">
                                     <i class="fas fa-arrow-right"></i>
@@ -1279,7 +1282,11 @@ Service Area
                                 </p>
                             </div>
                             <div class="thumb">
-                                <img src="assets/img/service/service_box_2-2.jpg" alt="img" style="width: 270px; height: 200px; object-fit: cover;" />
+                                <img
+                                    src="assets/img/service/service_box_2-2.jpg"
+                                    alt="img"
+                                    style="width: 270px; height: 200px; object-fit: cover"
+                                />
 
                                 <a href="service-details.html" class="icon">
                                     <i class="fas fa-arrow-right"></i>
@@ -1301,7 +1308,11 @@ Service Area
                                 </p>
                             </div>
                             <div class="thumb">
-                                <img src="assets/img/service/service_box_2-3.jpg" alt="img" style="width: 270px; height: 200px; object-fit: cover;" />
+                                <img
+                                    src="assets/img/service/service_box_2-3.jpg"
+                                    alt="img"
+                                    style="width: 270px; height: 200px; object-fit: cover"
+                                />
 
                                 <a href="service-details.html" class="icon">
                                     <i class="fas fa-arrow-right"></i>
@@ -1323,7 +1334,11 @@ Service Area
                                 </p>
                             </div>
                             <div class="thumb">
-                                <img src="assets/img/service/service_box_2-4.jpg" alt="img" style="width: 270px; height: 200px; object-fit: cover;" />
+                                <img
+                                    src="assets/img/service/service_box_2-4.jpg"
+                                    alt="img"
+                                    style="width: 270px; height: 200px; object-fit: cover"
+                                />
 
                                 <a href="service-details.html" class="icon">
                                     <i class="fas fa-arrow-right"></i>
@@ -1345,7 +1360,11 @@ Service Area
                                 </p>
                             </div>
                             <div class="thumb">
-                                <img src="assets/img/service/service_box_2-5.jpg" alt="img" style="width: 270px; height: 200px; object-fit: cover;" />
+                                <img
+                                    src="assets/img/service/service_box_2-5.jpg"
+                                    alt="img"
+                                    style="width: 270px; height: 200px; object-fit: cover"
+                                />
 
                                 <a href="service-details.html" class="icon">
                                     <i class="fas fa-arrow-right"></i>
@@ -2329,5 +2348,17 @@ Blog Area
 
         <!-- Main Js File -->
         <script src="assets/js/main.js"></script>
+
+        <script>
+            window.addEventListener("scroll", function () {
+                var logo = document.querySelector(".header-logo");
+                if (window.scrollY > 5) {
+                    // Puedes ajustar el valor 50 según cuándo quieras que cambie el tamaño
+                    logo.classList.add("small");
+                } else {
+                    logo.classList.remove("small");
+                }
+            });
+        </script>
     </body>
 </html>
