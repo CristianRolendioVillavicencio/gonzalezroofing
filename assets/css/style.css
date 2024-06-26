@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*
-Template Name: Ruffer
-Template URL: http://themeholy.com/html/Ruffer
+Template Name: Gonzalez Roofing And Exteriors LLC
+Template URL: http://themeholy.com/html/Gonzalez Roofing And Exteriors LLC
 Description: Roof Construction & Repair HTML Template
 Author: themeholy
 Author URI: https://themeforest.net/user/themeholy
@@ -5633,8 +5633,6 @@ ol.wp-block-rss {
 .header-logo {
   padding-top: 15px;
   padding-bottom: 15px;
-margin-left: -15px;
-
 }
 
 .header-links > ul {
@@ -5877,18 +5875,6 @@ margin-left: -15px;
           clip-path: polygon(0 0, calc(100% - 30px) 0, 100% 100%, 0% 100%);
   z-index: -2;
 }
-
-.logo-bg {
-  position: relative;
-  display: inline-block;
-}
-
-
-
-
-
-
-
 
 /* Hight Resoulation devices */
 @media (min-width: 1922px) {
@@ -11201,7 +11187,7 @@ table.woocommerce-product-attributes {
 }
 
 .select2-container--default .select2-search--dropdown .select2-search__field {
-  border: 1px solid #ffffff;
+  border: 1px solid #eee;
   padding: 0;
 }
 
