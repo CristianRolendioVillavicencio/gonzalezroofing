@@ -1,4 +1,43 @@
+.reviews-section {
+  position: relative;
+  background-color: white;
+  padding-top: 40px; /* Ajusta según sea necesario */
+  padding-bottom: 40px; /* Ajusta según sea necesario */
+}
 
+.reviews-section-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.reviews-section-title h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.reviews-section-title p {
+  font-size: 1.2em;
+  color: #666;
+}
+
+.reviews-overlay-button {
+  position: absolute;
+  bottom: 10px; /* Ajusta según sea necesario */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #007bff; /* Color del botón */
+  color: white; /* Color del texto del botón */
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  z-index: 1000; /* Asegúrate de que esté por encima de otros elementos */
+}
+
+.reviews-overlay-button:hover {
+  background-color: #0056b3; /* Color del botón al pasar el ratón */
+}
 
 
 .ggallery {
@@ -14361,9 +14400,9 @@ span.select2-selection.select2-selection--single:focus {
   -webkit-transform: translate(0, 50%);
       -ms-transform: translate(0, 50%);
           transform: translate(0, 50%);
-  margin-top: -125px;
+  margin-top: -212px;
   position: relative;
-  z-index: 3;
+  z-index: 999;
 }
 
 .counter-card {
@@ -14472,12 +14511,14 @@ span.select2-selection.select2-selection--single:focus {
 @media (max-width: 1199px) {
   .counter-area-3 {
     padding: 60px;
-    margin-top: -100.5px;
+    margin-top: -20px;
   }
   .counter-card.style3 .counter-card_number {
     font-size: 45px;
   }
 }
+
+
 
 /* Medium devices */
 @media (max-width: 991px) {
