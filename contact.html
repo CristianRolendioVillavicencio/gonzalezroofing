@@ -328,8 +328,14 @@ Contact Area
                         </div>
                     </div>
 
+
+
+
+
+                    
                     <div class="col-xl-6 ps-xl-4">
                         <form
+                            id="contactForm"
                             action="newmail.php"
                             method="POST"
                             class="th-contact-form bg-smoke ajax-contact"
@@ -383,13 +389,25 @@ Contact Area
                                     ></textarea>
                                 </div>
                                 <div class="col-12 form-group mb-0">
-                                    <button class="th-btn">
+                                    <button type="submit" class="th-btn">
                                         Send Message <i class="fas fa-arrow-right ms-2"></i>
                                     </button>
                                 </div>
                             </div>
                         </form>
+                        <div id="confirmationMessage" style="display:none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: rgba(0, 128, 0, 0.7); color: white; padding: 20px; border-radius: 10px; font-size: 24px; text-align: center; z-index: 10000;">
+                            Thank You! Your message has been sent.
+                        </div>
                     </div>
+                    
+
+
+
+
+
+
+
+
                 </div>
             </div>
         </div>
@@ -585,5 +603,45 @@ Contact Area
 
         <!-- Main Js File -->
         <script src="assets/js/main.js"></script>
+
+        <script>
+            document.getElementById('contactForm').addEventListener('submit', function(event) {
+                event.preventDefault(); // Prevent the default form submission
+            
+                // Gather form data
+                var formData = new FormData(this);
+            
+                // Send the data using fetch
+                fetch('newmail.php', {
+                    method: 'POST',
+                    body: formData
+                })
+                .then(response => {
+                    if (response.ok) {
+                        // Show confirmation message
+                        document.getElementById('confirmationMessage').style.display = 'block';
+                        // Hide the confirmation message after 3 seconds and reset the form
+                        setTimeout(function() {
+                            document.getElementById('confirmationMessage').style.display = 'none';
+                            document.getElementById('contactForm').reset();
+                        }, 3000);
+                    } else {
+                        // Handle errors here
+                        alert('Oops! Something went wrong and we couldn\'t send your message.');
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('Oops! Something went wrong and we couldn\'t send your message.');
+                });
+            });
+            </script>
+            </body>
+            </html>
+            
+
+
+
+
     </body>
 </html>
