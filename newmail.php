@@ -73,7 +73,7 @@ EMAIL;
         // If the email is sent successfully, send a HTTP 200 (OK) response
         http_response_code(200);
         echo "<div style='position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: rgba(0, 128, 0, 0.5); color: white; padding: 20px; border-radius: 10px; font-size: 24px; z-index: 10000;'>Thank You! Your message has been sent.</div>";
-        echo "<script>setTimeout(function() { window.location = '/'; }, 1000);</script>";
+        echo "<script>setTimeout(function() { window.location = '/'; }, 3000);</script>"; // Cambiado a 3 segundos
     } else {
         // If sending fails, send a HTTP 500 (Internal Server Error) response
         http_response_code(500);
