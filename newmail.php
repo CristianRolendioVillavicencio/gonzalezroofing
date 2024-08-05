@@ -23,7 +23,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // Email recipient address
-    $recipient = "info@gonzalezroofingnc.com, cristianvillavicencix@gmail.com";
+    $recipient = "gonzalezimprovement@gmail.com";
 
     // Build the HTML email content
     $email_content = <<<EMAIL
